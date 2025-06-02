@@ -1,1 +1,0 @@
-def exp(p, e):
