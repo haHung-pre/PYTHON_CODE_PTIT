@@ -1,20 +1,18 @@
+import sys
 class Rectangle:
-    def __init__(self, w, h, color):
-        self.w = w
-        self.h = h
-        
-        self.color = color.capitalize()
+    def __init__(self, a, b, c) -> None:
+        self.perimeter = (a+b)*2
+        self.area = a*b
+        self.color = c.capitalize()
 
+arr = input().split() 
+if int(arr[0]) > 0 and int(arr[1]) > 0: 
+    r = Rectangle(int(arr[0]), int(arr[1]), arr[2]) 
+    print('{} {} {}'.format(r.perimeter, r.area, r.color)) 
+else: print('INVALID')
+sys.exit()
+if __name__ == '__main__':
+    arr = input().split()
+    r = Rectangle(int(arr[0]), int(arr[1]), int(arr[2]))
+    print('{} {} {}'.format(r.perimeter(), r.area(), r.color()))
 
-    def output(self):
-        if self.w <= 0 or self.h <= 0:
-            print("INVALID")
-        else:
-            chu_vi = (self.w + self.h) * 2
-            dien_tich = self.w * self.h
-            print(chu_vi, dien_tich, self.color)
-
-
-a = input().split()
-rec = Rectangle(int(a[0]), int(a[1]), a[2])
-rec.output()
