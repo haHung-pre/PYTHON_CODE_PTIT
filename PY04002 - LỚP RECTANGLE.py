@@ -1,5 +1,5 @@
 class Rectangle:
-    def __init__(self, a, b, c) -> None:
+    def __init__(self, a, b, c):
         self.perimeter = (a+b)*2
         self.area = a*b
         self.color = c.capitalize()
