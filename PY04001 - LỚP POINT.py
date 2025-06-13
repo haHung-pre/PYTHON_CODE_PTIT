@@ -1,7 +1,7 @@
 from decimal import Decimal
 from math import sqrt
 class Point:
-    def __init__(self, a, b) -> None:
+    def __init__(self, a, b):
         self.x = a
         self.y = b
     def distance(self, b):
