@@ -9,3 +9,11 @@ class PhanSo:
 x,y=list(map(int,input().split()))
 p=PhanSo(x,y)
 print(p)
+
+
+
+
+from math import gcd
+a, b = map(int, input().split())
+print(f'{a//gcd(a,b)}/{b//gcd(a,b)}')
+
